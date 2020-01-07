@@ -26,3 +26,11 @@ Step2: Encrypt the data using Customer Master Key (in Turn it uses Data key)  an
 
 Step3: Get the data from S3 and decrypt(in turn it uses data key stored in S3 and Customer Master key to decrypt data key) .
 	Code : com.mycompany.S3Downloader
+
+# note 
+
+Replace ASW access  key and secret key on every file with your own access key and secret key . Refer to AWS docs for best practices
+
+https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html
+
+BasicAWSCredentials awsCreds = new BasicAWSCredentials("XXXX", "YYYY");
