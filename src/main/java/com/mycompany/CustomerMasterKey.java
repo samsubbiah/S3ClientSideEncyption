@@ -37,7 +37,7 @@ public class CustomerMasterKey {
         Regions clientRegion = Regions.US_EAST_1;
         String kms_cmk_id = "";
         try {
-            BasicAWSCredentials awsCreds = new BasicAWSCredentials("XXXX", "YYYY");
+            BasicAWSCredentials awsCreds = AWSUtility.getBasicCredetials();
             // Optional: If you don't have a KMS key (or need another one),
             // create one. This example creates a key with AWS-created
             // key material.

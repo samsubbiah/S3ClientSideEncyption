@@ -38,7 +38,7 @@ public class S3Uploader {
         String kms_cmk_id = "df41bb56-3961-438a-a16b-a5e35750be04";
 
         try {
-            BasicAWSCredentials awsCreds = new BasicAWSCredentials("XXXX", "YYYY");
+            BasicAWSCredentials awsCreds = AWSUtility.getBasicCredetials();
             // Create the encryption client.
             KMSEncryptionMaterialsProvider materialProvider = new KMSEncryptionMaterialsProvider(kms_cmk_id);
             CryptoConfiguration cryptoConfig = new CryptoConfiguration()

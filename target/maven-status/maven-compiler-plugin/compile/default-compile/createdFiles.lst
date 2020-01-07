@@ -1,0 +1,5 @@
+com\mycompany\AWSUtility.class
+com\mycompany\S3Uploader.class
+com\mycompany\App.class
+com\mycompany\CustomerMasterKey.class
+com\mycompany\S3Downloader.class
